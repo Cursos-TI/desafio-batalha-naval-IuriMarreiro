@@ -37,6 +37,22 @@ int main () {
     {
         tabuleiro[j][7] = 7;
     }
+
+//Declando na matriz o navio na diagonal primaria
+//Loop For com duas variveis inicializadas com condicionais para registrar o navio
+
+    for (i = 3, j = 1; i <= 5 && j <= 3; i++, j++)
+    {
+        tabuleiro[i][j] = 7;
+    }
+    
+//Declando na matriz o navio na diagonal secundaria
+//Loop For com duas variveis inicializadas com condicionais para registrar o navio
+
+    for (i = 1, j = 8; i <= 3 && j >= 6; i++, j--)
+    {
+        tabuleiro[i][j] = 7;
+    }
     
 //Código para imprimir o tabuleiro no console
 //Matriz do tabuleiro é impresso no console por meio do loop For aninhado
